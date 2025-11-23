@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISA & THIAGO ❤️</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>ISA & THIAGO</h1>
+
+        <div class="menu-nav">
+            <button id="btnGaleria" class="active">Nossas Memórias</button>
+            <button id="btnCadastro">Adicionar Momento</button>
+        </div>
+        
+        <hr>
+
+        <section id="galeria-secao" class="secao-ativa">
+            <h2>Momentos Inesquecíveis</h2>
+            
+            <div id="carousel-container" class="carousel">
+                </div>
+            
+            <div id="detalhes-memoria" class="detalhes-romanticos">
+                <p>Clique em uma foto acima para reviver esta memória especial.</p>
+            </div>
+        </section>
+
+
+        <section id="cadastro-secao" class="secao-oculta">
+            <h2>Criar Nova Memória</h2>
+            <form id="cadastroFormulario">
+                
+                <label for="tituloNovo">Título (Ex: Nosso Primeiro Encontro):</label>
+                <input type="text" id="tituloNovo" required>
+
+                <label for="enderecoNovo">Local (Nome do lugar ou link do Google Maps):</label>
+                <input type="text" id="enderecoNovo" required>
+
+                <label for="descricaoNovo">Nossa História (conte tudo!):</label>
+                <textarea id="descricaoNovo" rows="6" required></textarea>
+
+                <label for="srcNovo">Selecione o Arquivo da Imagem:</label>
+                <input type="file" id="srcNovo" accept="image/*" required>
+                
+                <button type="submit">Guardar Momento</button>
+            </form>
+            <p class="nota">⚠️ **IMPORTANTE:** Como não há servidor, o JavaScript só carregará a imagem *enquanto você estiver na página*. Para a memória funcionar permanentemente, você deve **copiar a imagem desta pasta para a pasta do projeto (Presente Isa)** e usar o nome dela (ex: `nova-foto.jpeg`) no campo "Nome do Arquivo da Imagem" que aparecerá no alerta.</p>
+        </section>
+
+    </div>
+    
+    <script src="isa.js"></script>
+</body>
+</html>
